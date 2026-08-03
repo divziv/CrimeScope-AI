@@ -1,6 +1,5 @@
 # 🇮🇳 CrimeScope AI: AI-Driven Crime Analytics & Public Safety Platform
 ### *From raw police records to actionable intelligence in seconds.*
-### **Winner Proposal Entry — Datathon 2026 (Challenge 02)**
 
 ---
 
