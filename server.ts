@@ -314,6 +314,16 @@ async function startServer() {
     }
   });
 
+  // Get all districts across all states (for National JSON export)
+  app.get("/api/districts", (req, res) => {
+    try {
+      const districts = dbInstance.getAllDistricts();
+      res.json(districts);
+    } catch (error: any) {
+      res.status(500).json({ error: "Failed to fetch all district registers", message: error.message });
+    }
+  });
+
   // Crime AI Copilot Endpoint - invokes processCopilotQuery (utilizes GoogleGenAI)
   app.post("/api/copilot", async (req, res) => {
     try {
